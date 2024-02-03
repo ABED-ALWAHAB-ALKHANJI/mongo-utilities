@@ -6,7 +6,7 @@
 
 <!-- Introduction Section -->
 ## Introduction
-MongoHelper is a Python library that simplifies MongoDB operations by providing a convenient interface for common tasks.
+MongoUtilities is a Python library that simplifies MongoDB operations by providing a convenient interface for common tasks.
 
 <!-- Installation Section -->
 ## Installation
@@ -17,6 +17,7 @@ pip install mongo-utilities
 Make sure to set the following environment variables:
 
 MONGO_DATABASE_URI: Your MongoDB database URI.
+
 MONGO_DATABASE_NAME: Your MongoDB database name.
 
 Then import it in you project
