@@ -12,7 +12,7 @@ jobs:
     name: Code Check  😜
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/setup-python@v2
       - name: Set up Python 3.11
         uses: actions/setup-python@v2
         with:
@@ -84,7 +84,7 @@ jobs:
   publish-to-pypi:
     name: >-
       Publish Python 🐍 distribution 📦 to PyPI
-    if: startsWith(github.ref, 'refs/tags/')  # only publish to PyPI on tag pushes
+    if: startsWith(github.ref, 'refs/tags/v')  # only publish to PyPI on tag pushes
     needs:
       - build
     runs-on: ubuntu-latest
