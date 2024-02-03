@@ -32,6 +32,8 @@ jobs:
     #      run: |
     #        pytest
   build:
+    needs:
+      - code_check
     name: Build distribution 📦
     runs-on: ubuntu-latest
 
