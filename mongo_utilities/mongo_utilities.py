@@ -31,7 +31,7 @@ class MongoUtilities:
 
                 Args:
                     collection (str): The name of the MongoDB collection to work with.
-                    model (Type): The custom model class to use for data mapping.
+                    model : The custom model class to use for data mapping.
         """
         self.collection = collection
 
